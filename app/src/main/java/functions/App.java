@@ -5,5 +5,68 @@ package functions;
 
 public class App {
     public static void main(String[] args) {
+        // Control Flow - How does the program run?
+        // 1. Sequential
+        // 2. Modularity/Modules (e.g., Functions or Methods)
+
+        // void Functions - Do Something, but not give you data
+        // System.out.println("Hello, world");
+
+        // RUNS the function
+        // printHelloWorld();
+        // printHello("Alice");
+        // printHello("Bob");
+
+        // String name = "Bob";
+        // printHello(name);
+        // int years = 40;
+        // String name = "Bob";
+        // printNameAge(name, years);
+        // printHello();
+        // printHello("Bob");
+        // printHello("Bob", 40);
+
+        // can't create functions in here, because we're already in a function
     }
+
+    // Can define functions/methods here
+    // DEFINE the function
+
+    /**
+     * Prints hello world to the screen (this is a javadoc)
+     */
+    static void printHello() {
+        System.out.println("Hello, world!");
+    }
+
+    // Parameter (define) / Argument (call) - is a variable
+    // Only exists within the function
+
+    /**
+     * Prints hello with a name to the screen
+     * @param name the name to show
+     */
+    static void printHello(String name) {
+        System.out.println("Hello!");
+        System.out.println(name);
+    }
+
+    /**
+     * Print hello with a name and age to the screen
+     * @param name the name to print
+     * @param age the age to print
+     */
+    static void printHello(String name, int age) {
+        // System.out.println("Hello!");
+        // System.out.println(name);
+        printHello(name);
+        System.out.println(age);
+    }
+
+
+
+
+
 }
+
+// Can't put code out here
